@@ -1,0 +1,71 @@
+.services-container {
+    background-color: #F2F3F2;
+    padding: 60px 20px;
+  }
+  
+  .services-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .left-section1 {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    color: #E6813E;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #46434E;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #7C808B;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .right-section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    color: #46434E;
+    margin-bottom: 1rem;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #46434E;
+    margin-bottom: 1rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #7C808B;
+    line-height: 1.5;
+  }
+  

@@ -1,0 +1,98 @@
+.projects-container {
+    background-color: #F2F3F2;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .see-more {
+    color: #E6813E;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .see-more .arrow {
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }
+  
+  .projects-title {
+    color: #46434E;
+    font-size: 1.25rem;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #46434E;
+    margin-bottom: 40px;
+  }
+  
+  .projects-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-details {
+    padding: 20px;
+  }
+  
+  .project-category {
+    color: #E6813E;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #46434E;
+    margin-bottom: 1rem;
+  }
+  
+  .project-description {
+    color: #7C808B;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .download-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .download-button {
+    background-color: #46434E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .download-button:hover {
+    background-color: #E6813E;
+  }
+  

@@ -1,0 +1,121 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  // .profile-content {
+  //   display: flex;
+  //   flex-direction: column;
+  //   max-width: 1200px;
+  //   width: 100%;
+  //   background-color: white;
+  //   border-radius: 8px;
+  //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  //   padding: 20px;
+  // }
+
+  .profile-content {
+    display: grid;
+    grid-template-columns: 15% 45% 40%;
+  }
+  
+  .left-section, .middle-section, .right-section {
+    margin: 20px;
+  }
+  
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 1;
+  }
+  
+  .greeting {
+    color: #E6813E;
+    margin-bottom: 0.5rem;
+  }
+  
+  .name {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #46434E;
+    margin-bottom: 0.5rem;
+  }
+  
+  .underline {
+    width: 64px;
+    height: 7px;
+    background-color: #E6813E;
+    margin: 0.5rem auto 1.5rem 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .social-icon {
+    color: #434343;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #E6813E;
+  }
+  
+  .middle-section {
+    flex: 1;
+  }
+  
+  .profile-image {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #46434E;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    color: #7C808B;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .reach-me {
+    background-color: #E6813E;
+    color: white;
+  }
+  
+  .download-cv {
+    border: 2px solid #E6813E;
+    color: #E6813E;
+  }
+  

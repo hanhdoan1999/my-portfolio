@@ -1,12 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import './styles/variables.scss';
 
 body {
   margin: 0;
   font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #F2F3F2;
+  color: #7C808B
 }
 
 code {
@@ -14,4 +14,25 @@ code {
     monospace;
 }
 
+.dark-mode {
+  background-color: #434343;
+  color: white;
+
+  .heading, .title, .name , .navbar a, .blog-details .blog-title{ 
+    color: white !important;
+  }
+
+  .projects-title, .blog-title {
+    color: #E6813E !important;
+  }
+
+  .cta-container, .why-hire-me-content {
+    background-color: #46434E;
+  }
+
+  .profile-container .social-icon {
+    color: #ffffff !important;
+  }
+
+}
 

@@ -3,10 +3,10 @@ import "./Container.scss";
 import Header from '../Header/Header';
 import Footer from "../Footer/Footer";
 
-const Container = ({ children }) => {
+const Container = ({ children,isOn,toggleSwitch }) => {
     return (
         <div className="container">
-            <Header/>
+            <Header isOn={isOn} toggleSwitch={toggleSwitch}/>
             {children}
             <Footer/>
         </div>

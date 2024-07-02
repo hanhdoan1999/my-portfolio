@@ -1,8 +1,8 @@
-import Logo from "../../assets/images/hanhdth.png"; // Corrected path
+// import Logo from "../../assets/images/logo-new.png";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import "./Header.scss";
 
-const Header = () => {
+const Header = ({isOn,toggleSwitch}) => {
   const menus = [
     { name: "Home", link: "./" },
     { name: "Product", link: "Prouct" },
@@ -10,14 +10,14 @@ const Header = () => {
   return (
     <header className="header-content">
       <div className="Logo">
-        <img src={Logo} alt="Logo" className="LogoImage"/>
+        {/* <img src={Logo} alt="Logo" className="LogoImage"/> */}
       </div>
-      <nav>
+      <nav className="navbar">
         {menus.map((item, index) => (
           <a href="/">{item?.name}</a>
         ))}
       </nav>
-      <ToggleSwitch />
+      <ToggleSwitch isOn={isOn} toggleSwitch={toggleSwitch}/>
     </header>
   );
 };

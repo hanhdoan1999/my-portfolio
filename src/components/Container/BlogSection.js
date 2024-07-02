@@ -11,7 +11,7 @@ const BlogSection = () => {
         <p className="blog-title">Blog</p>
         <a href="#" className="see-more">See the full blog <span className="arrow">→</span></a>
       </div>
-      <h2 className="heading">Find the latest of my writing here</h2>
+      <h2 className="heading ">Find the latest of my writing here</h2>
       <div className="blog-content">
         <div className="blog-card">
           <img src={blogImage1} alt="Blog 1" className="blog-image" />

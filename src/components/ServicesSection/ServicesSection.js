@@ -8,14 +8,16 @@ const ServicesSection = () => {
     <div className="services-container">
       <div className="services-content">
         <div className="left-section1">
+          <div className="content-section">
           <p className="section-title">Services</p>
-          <h2 className="heading">Best solution to boost your project and business</h2>
+          <h2 className="heading ">Best solution to boost your project and business</h2>
           <p className="description">
             Are you a professional who needs an attractive website for your business or service? Does your current website look like it "old-fashioned"? Is it not mobile responsive? It doesn't have a modern look and optimal user experience across various devices, and browsers?
           </p>
-          <p className="description">
+          <p className="description" style={{color: "#434343"}}>
             Well, you’re in the right place.
           </p>
+          </div>
         </div>
         <div className="right-section1">
           <div className="service-card">

@@ -17,7 +17,6 @@ function App() {
           <Route path="/blog/:id" element={<BlogDetail/>} />
           <Route path="/add-blog/" element={<AddBlog/>} />
           <Route path="*" element={<NotFound />} />
-          {/* <Route path="/project" element={<ListProject/>} /> */}
         </Routes>
     </Router>
   );

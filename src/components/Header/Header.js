@@ -8,7 +8,7 @@ const Header = ({isOn,toggleSwitch}) => {
     { name: "Home", link: "./" },
     { name: "Project", link: "/projects" },
     { name: "Blog", link: "/blog" },
-    { name: "Add Blog", link: "/add-blog" },
+    // { name: "Add Blog", link: "/add-blog" },
   ];
   return (
     <header className="header-content">

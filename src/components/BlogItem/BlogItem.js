@@ -13,7 +13,8 @@ function BlogItem({item,id}) {
         <img src={item?.fileName} alt="Blog 1" className="blog-image" />
         <div className="blog-details">
           <p className="blog-date">{item?.date || 'N/A'}</p>
-          <h3 className="blog-title">{item?.content}</h3>
+          <h3 className="blog-title">{item?.title}</h3>
+          <p className="blog-description">{item?.content}</p>
         </div>
       </div>
   )

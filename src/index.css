@@ -31,7 +31,7 @@ code {
     background-color: #46434E;
   }
 
-  .profile-container .social-icon {
+  .profile-container .social-icon, .blog-description {
     color: #ffffff !important;
   }
 

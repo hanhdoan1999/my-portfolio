@@ -5,9 +5,9 @@ import "../styles/pages/Blogs.scss"
 import Loading from "../components/Loading/Loading";
 import { useParams } from "react-router-dom";
 
-function BlogDetail() {
+function Projects() {
   const { id } = useParams();
-  const [blog, setBlog] = useState([]);
+  const [project, setProject] = useState([]);
   const [loading, setLoading] = useState(true);
 
 
@@ -15,9 +15,8 @@ function BlogDetail() {
     const fetchBlogDetail = async () => {
       try {
         const blogData = await getBlogById(id);
-        setBlog(blogData);
+        setProject(blogData);
         setLoading(false);
-        console.log(blog)
       } catch (error) {
         console.error("Error fetching blog:", error);
         setLoading(false);
@@ -30,8 +29,8 @@ function BlogDetail() {
     return <Loading />;
   }
 
-  if (!blog) {
-    return <p>Blog not found</p>;
+  if (!project) {
+    return <p>Project not found</p>;
   }
 
   return (
@@ -47,4 +46,4 @@ function BlogDetail() {
   );
 }
 
-export default BlogDetail;
+export default Projects;

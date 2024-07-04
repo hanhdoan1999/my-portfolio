@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 const Header = ({isOn,toggleSwitch}) => {
   const menus = [
     { name: "Home", link: "./" },
-    { name: "Project", link: "/project" },
+    { name: "Project", link: "/projects" },
     { name: "Blog", link: "/blog" },
+    { name: "Add Blog", link: "/add-blog" },
   ];
   return (
     <header className="header-content">
@@ -16,7 +17,7 @@ const Header = ({isOn,toggleSwitch}) => {
       </div>
       <nav className="navbar">
         {menus.map((item, index) => (
-          <Link to={`${item.link}`}>{item?.name}</Link>
+          <Link to={`${item.link}`} key={index}>{item?.name}</Link>
         ))}
       </nav>
       <ToggleSwitch isOn={isOn} toggleSwitch={toggleSwitch}/>

@@ -1,39 +1,21 @@
 
-import Header from './components/Header/Header';
-import Container from './components/Container/Container';
-import IntroSection from './components/IntroSection/IntroSection';
-import AboutSection from './components/AboutSection/AboutSection';
-import WhyHireMeSection from './components/WhyHireMeSection/WhyHireMeSection';
-import ServicesSection from './components/ServicesSection/ServicesSection';
-import ProjectsSection from './components/ProjectsSection/ProjectsSection';
-import BlogSection from './components/Container/BlogSection';
-import CTASection from './components/CTASection/CTASection';
-import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import Blogs from './pages/Blogs';
+import BlogDetail from './pages/BlogDetail';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(() => {
-    const savedMode = localStorage.getItem('darkMode');
-    return savedMode ? JSON.parse(savedMode) : false;
-  });
-
-  useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(darkMode));
-  }, [darkMode]);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
   return (
-    <div className={darkMode ? 'app dark-mode' : 'app'}>
-      <Container  isOn={darkMode} toggleSwitch={toggleDarkMode}>
-        <IntroSection/>
-        <WhyHireMeSection/>
-        <ServicesSection/>
-        <ProjectsSection/>
-        <BlogSection/>
-        <CTASection/>
-      </Container>
-    </div>
+    <Router>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/blog" element={<Blogs/>} />
+          <Route path="/blog/:id" element={<BlogDetail/>} />
+          <Route path="*" element={<NotFound />} />
+          {/* <Route path="/project" element={<ListProject/>} /> */}
+        </Routes>
+    </Router>
   );
 }
 

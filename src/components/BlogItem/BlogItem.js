@@ -3,7 +3,6 @@ import "./BlogItem.scss"
 import { Link, useNavigate } from 'react-router-dom'
 
 function BlogItem({item,id}) {
-  console.log(item)
   const navigate = useNavigate();
   const handleNavigate = () => {
     navigate(`/blog/${id}`);

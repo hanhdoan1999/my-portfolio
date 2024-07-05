@@ -6,9 +6,13 @@ import Blogs from './pages/Blogs';
 import BlogDetail from './pages/BlogDetail';
 import AddBlog from './pages/AddBlog';
 import Projects from './pages/Projects';
+import AddProjects from './pages/AddProjects';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
+    <>
     <Router>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -16,9 +20,22 @@ function App() {
           <Route path="/projects" element={<Projects/>} />
           <Route path="/blog/:id" element={<BlogDetail/>} />
           <Route path="/add-blog/" element={<AddBlog/>} />
+          <Route path="/add-project/" element={<AddProjects/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
     </Router>
+    <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+    </>
   );
 }
 

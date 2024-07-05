@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Button.scss"
 
-function Button({title,onClick,type = "primary" }) {
+function Button({title,onClick,style = "primary", ...props}) {
   return (
-    <button className={`${'btn'} ${type === "primary" ? "btn-primary" : "btn-secondrary"}`} onClick = {onClick}>{title}</button>
+    <button {...props} className={`${'btn'} ${style === "primary" ? "btn-primary" : "btn-secondrary"}`} onClick = {onClick}>{title}</button>
   )
 }
 

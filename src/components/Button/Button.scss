@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    outline: none;
 }
 
 .btn-primary {
@@ -19,4 +20,9 @@
     border: 2px solid #E6813E;
     color: #E6813E;
     background-color: #FFFFFF;
+}
+
+button:disabled {
+    background-color: #e6813ea1;
+    border-color: transparent;
 }

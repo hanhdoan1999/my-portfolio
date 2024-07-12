@@ -1,1 +1,0 @@
-export const URL = 'https://fir-blog-19b47-default-rtdb.firebaseio.com'

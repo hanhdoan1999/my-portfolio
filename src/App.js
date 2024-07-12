@@ -29,7 +29,7 @@ function App() {
           <Route path="/add-blog" element={<AddBlog/>} />
           <Route path="/add-project" element={<AddProjects/>} />
           <Route path="/contact" element={<ContactPage/>} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
     </Router>
     <ToastContainer

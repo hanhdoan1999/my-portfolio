@@ -47,7 +47,7 @@
     
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     .experiences-container {
       padding: 2rem 0;
       .heading {
@@ -56,6 +56,11 @@
     }
     .experience-content {
       flex-direction: column;
+    }
+
+    .experience-container .experience-card {
+      flex-direction: column;
+      gap: 1rem;
     }
   }
   

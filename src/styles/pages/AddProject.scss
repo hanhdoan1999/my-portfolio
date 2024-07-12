@@ -1,12 +1,15 @@
 .form-custom {
     max-width: 500px;
-    margin: 2rem auto;
+    width:100%;
+    padding: 0 20px;
+    box-sizing: border-box;
     padding: 2rem;
     background-color: #ffffff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    text-align: left;
     label {
         display: flex;
         flex-direction: column;
@@ -40,4 +43,15 @@
         overflow: hidden;
     }
 
+    button {
+        margin-top: 1rem;
+    }
+
 }
+
+// @media screen and (max-width:600px) {
+//     .form-custom {
+//         width: 300px;
+//         margin: 0 auto;
+//     }
+// }

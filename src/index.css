@@ -19,7 +19,7 @@ code {
   background-color: #434343;
   color: white;
 
-  .heading, .title, .name , .navbar a, .blog-details .blog-title{ 
+  .heading, .title, .name , .navbar a, .nav-link, .blog-details .blog-title{ 
     color: white !important;
   }
 
@@ -31,7 +31,7 @@ code {
     background-color: #46434E;
   }
 
-  .profile-container .social-icon, .blog-description {
+  .profile-container .social-icon, .blog-description, .description {
     color: #ffffff !important;
   }
 

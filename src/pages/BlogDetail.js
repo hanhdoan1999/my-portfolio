@@ -17,7 +17,6 @@ function BlogDetail() {
         const blogData = await getBlogById(id);
         setBlog(blogData);
         setLoading(false);
-        console.log(blog)
       } catch (error) {
         console.error("Error fetching blog:", error);
         setLoading(false);
@@ -36,6 +35,7 @@ function BlogDetail() {
 
   return (
     <Container>
+      <h2> This section is currently under development, I apologize for the inconvenience</h2>
       <h2>{blog?.title}</h2>
       <div>{blog?.content}</div>
       {/* <div className="blogs">

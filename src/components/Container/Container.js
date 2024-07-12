@@ -2,25 +2,17 @@ import React, { useEffect, useState } from "react";
 import "./Container.scss";
 import Header from '../Header/Header';
 import Footer from "../Footer/Footer";
+import { useDarkMode } from "../../Context/useDarkMode";
+import ScrollToSection from "../ScrollToSection/ScrollToSection";
 
 const Container = ({ children}) => {
-const [darkMode, setDarkMode] = useState(() => {
-    const savedMode = localStorage.getItem('darkMode');
-    return savedMode ? JSON.parse(savedMode) : false;
-    });
-
-    useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(darkMode));
-    }, [darkMode]);
-
-    const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-    };
-
+    const { darkMode, toggleDarkMode } = useDarkMode();
+    const [section, setSection] = useState(null);
     return (
         <div className={darkMode ? 'app dark-mode' : 'app'}>
+            <Header isOn={darkMode} toggleSwitch={toggleDarkMode} setSection={setSection}/>
             <div className="container">
-                <Header isOn={darkMode} toggleSwitch={toggleDarkMode}/>
+                <ScrollToSection section={section} />
                 {children}
                 <Footer/>
             </div>

@@ -7,6 +7,8 @@ import ProjectsSection from '../components/ProjectsSection/ProjectsSection';
 import BlogSection from '../components/Container/BlogSection';
 import CTASection from '../components/CTASection/CTASection';
 import { useEffect, useState } from 'react';
+import Experience from '../components/Experience/Experience';
+import SkillSection from '../components/SkillSection/SkillSection';
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <Container>
         <IntroSection/>
         <WhyHireMeSection/>
+        <Experience/>
+        <SkillSection/>
         <ServicesSection/>
         <ProjectsSection/>
         <BlogSection/>

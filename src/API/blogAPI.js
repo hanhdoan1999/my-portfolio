@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { URL } from './URL';
 
-const BASE_URL = 'https://fir-blog-19b47-default-rtdb.firebaseio.com/posts';
+const BASE_URL = `${URL}/posts`;
 
 // Function to get all products
 export const getAllBlogs = async () => {

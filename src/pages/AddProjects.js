@@ -10,7 +10,7 @@ import { createProject } from "../API/projectAPI";
 import { toast } from "react-toastify";
 
 function AddProjects() {
-  const [formData, setFormData] = useState({ image: '', title: '', description: '', link: '' });
+  const [formData, setFormData] = useState({ image: '', title: '', tech : '', description: '', link: '', gitLink: '' });
   const [errors, setErrors] = useState({ title: '' });
   const [localImage, setLocalImage] = useState(null);
   const [imageUpload, setImageUpload] = useState(null);
@@ -64,7 +64,6 @@ function AddProjects() {
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
             setFormData({ ...formData, image: downloadURL });
-            console.log(formData)
             resolve(downloadURL);
           });
         }
@@ -72,12 +71,11 @@ function AddProjects() {
     });
   };
 
-  const handleCreateProject = async () => {
+  const handleCreateProject = async (updatedFormData) => {
     try {
-      const projectCreated = await createProject(formData);
-      console.log(projectCreated);
+      const projectCreated = await createProject(updatedFormData);
       toast.success("Project created successfully!");
-      setFormData({ image: '', title: '', description: '', link: '' });
+      setFormData({ image: '', title: '', tech: '', description: '', link: '', gitLink: '' });
       setLocalImage(null);
     } catch (error) {
       toast.error("Something went wrong, please try again");
@@ -91,9 +89,8 @@ function AddProjects() {
       setIsLoading(true);
       try {
         const imageUrl = await uploadImage();
-        console.log(imageUrl);
         if(imageUrl) {
-          const updatedFormData = { ...formData, image : formData.image };
+          const updatedFormData = { ...formData, image : imageUrl};
           await handleCreateProject(updatedFormData);
         }
       } catch (error) {
@@ -107,7 +104,7 @@ function AddProjects() {
 
   return (
     <Container>
-      <h2>Add New Projects</h2>
+      <h2 style={{textAlign:'center'}}>Add New Projects</h2>
       <form onSubmit={handleSubmit} className="form-custom">
         <div>
           <label>
@@ -134,11 +131,33 @@ function AddProjects() {
         </div>
         <div>
           <label>
-            Link:
+            Link :
             <input
               type="text"
               name="link"
               value={formData.link}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Link Git:
+            <input
+              type="text"
+              name="gitLink"
+              value={formData.gitLink}
+              onChange={handleChange}
+            />
+          </label>
+        </div>
+        <div>
+          <label>
+            Tech:
+            <input
+              type="text"
+              name="tech"
+              value={formData.tech}
               onChange={handleChange}
             />
           </label>

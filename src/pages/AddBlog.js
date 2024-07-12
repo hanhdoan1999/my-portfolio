@@ -44,11 +44,9 @@ function AddBlog() {
     const contentState = editorState.getCurrentContent();
     const rawContent = convertToRaw(contentState);
     const htmlContent = draftToHtml(rawContent);
-    console.log(htmlContent)
   }
 
   const uploadImageCallBack = (file) => {
-    console.log(file)
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
       reader.onloadend = () => {

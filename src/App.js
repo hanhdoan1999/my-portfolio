@@ -9,8 +9,14 @@ import Projects from './pages/Projects';
 import AddProjects from './pages/AddProjects';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Contact from './pages/Contact';
+import Header from './components/Header/Header';
+import ScrollToSection from './components/ScrollToSection/ScrollToSection';
+import { useState } from 'react';
+import ContactPage from './pages/ContactPage';
 
 function App() {
+
   return (
     <>
     <Router>
@@ -21,6 +27,7 @@ function App() {
           <Route path="/blog/:id" element={<BlogDetail/>} />
           <Route path="/add-blog/" element={<AddBlog/>} />
           <Route path="/add-project/" element={<AddProjects/>} />
+          <Route path="/contact/" element={<ContactPage/>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
     </Router>

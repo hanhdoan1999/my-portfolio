@@ -8,12 +8,12 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-content">
         <p className="footer-text">Professional Portfolio Web Template by 
-          <a href='https://www.figma.com/community/file/1011279485922959164' style={{textDecoration: 'none', color: '#E6813E'}}> Hani Husamuddin </a>
+          <a target="_blank" href='https://www.figma.com/@hanihusam' style={{textDecoration: 'none', color: '#E6813E'}}> Hani Husamuddin </a>
           on Figma, licensed under CC BY 4.0.</p>
         <div className="social-icons">
-        <a href="https://www.linkedin.com/in/h%E1%BA%A1nh-do%C3%A3n-6a2b24186/" className="social-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
-        <a href="https://github.com/hanhdoan1999" className="social-icon"><FontAwesomeIcon icon={faGithub} /></a>
-          <a href="https://www.facebook.com/doan.thihonghanh.3?mibextid=LQQJ4d" className="social-icon"><FontAwesomeIcon icon={faFacebook} /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/h%E1%BA%A1nh-do%C3%A3n-6a2b24186/" className="social-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
+        <a target="_blank" href="https://github.com/hanhdoan1999" className="social-icon"><FontAwesomeIcon icon={faGithub} /></a>
+          <a target="_blank" href="https://www.facebook.com/doan.thihonghanh.3?mibextid=LQQJ4d" className="social-icon"><FontAwesomeIcon icon={faFacebook} /></a>
         </div>
       </div>
     </div>

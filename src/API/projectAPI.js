@@ -1,9 +1,10 @@
 import axios from 'axios';
+import { URL } from './URL';
 
-const BASE_URL = 'https://fir-blog-19b47-default-rtdb.firebaseio.com/projects';
+const BASE_URL = `${URL}/projects`;
 
 // Function to get all products
-export const getAllProject = async () => {
+export const getAllProjects = async () => {
   try {
     const response = await axios.get(`${BASE_URL}.json`);
     return response.data;

@@ -29,7 +29,7 @@ function Blogs() {
 
   return (
     <Container>
-      <h2>Blogs</h2>
+      <h2>Blogs - This section is currently under development, I apologize for the inconvenience </h2>
       <div className="blogs">
         {Object.keys(blogs)?.map((key, index) => {
           const blog = blogs[key];
